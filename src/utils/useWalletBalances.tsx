@@ -1,11 +1,6 @@
 import { useState, useEffect } from 'react';
+import { WalletBalance } from 'src/pages/Problem3';
 
-interface WalletBalance {
-    currency: string;
-    amount: number;
-    blockchain: string;
-    formatted: string;
-}
 
 const useWalletBalances = (): WalletBalance[] => {
     const [balances, setBalances] = useState<WalletBalance[]>([]);
